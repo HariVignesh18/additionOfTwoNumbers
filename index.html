@@ -21,11 +21,11 @@
 
   <script>
     function cal() {
-      var firstNumber = parseFloat(document.getElementById("first").value);
-      var secondNumber = parseFloat(document.getElementById("second").value);
+      let firstNumber = parseFloat(document.getElementById("first").value);
+      let secondNumber = parseFloat(document.getElementById("second").value);
 
       if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
-        var sum = firstNumber + secondNumber;
+        let sum = firstNumber + secondNumber;
         document.getElementById("ans").textContent = "Sum: " + sum;
       } else {
         document.getElementById("ans").textContent = "Invalid input. Please enter valid numbers.";
